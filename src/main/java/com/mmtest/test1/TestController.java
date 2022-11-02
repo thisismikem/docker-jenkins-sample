@@ -8,9 +8,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/rest")
 public class TestController {
 
-	@GetMapping("/hello")
-	public String getValue() {
+	@GetMapping("/helloworld")
+	public String getHelloWorld() {
 		String result = "Hello World";
+		return result;
+	}
+	
+	@GetMapping("/hellohere")
+	public String getHelloHere() {
+		String result = "Hello Here";
 		return result;
 	}
 }
