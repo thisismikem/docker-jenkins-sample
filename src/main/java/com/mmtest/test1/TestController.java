@@ -19,4 +19,10 @@ public class TestController {
 		String result = "Hello Here";
 		return result;
 	}
+	
+	@GetMapping("/hellothere")
+	public String getHelloThere() {
+		String result = "Hello There";
+		return result;
+	}
 }
